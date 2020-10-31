@@ -127,7 +127,7 @@ class _RotatableCardState extends State<RotatableCard> {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(10),
-            child: Image.asset('images/logo.png'),
+            child: Image.asset('images/logo for the app.png'),
           ),
         ),
         margin: EdgeInsets.all(12),

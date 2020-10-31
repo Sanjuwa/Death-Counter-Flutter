@@ -55,29 +55,27 @@ class _PlayGameState extends State<PlayGame> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Container(
-              height: 35,
-              width: 35,
               child: Image(
-                image: AssetImage('images/logo.png'),
+                image: AssetImage('images/logo for the app.png'),
               ),
             ),
             SizedBox(
-              width: 10,
+              width: 30,
             ),
-            Text("Count Down Death"),
+            Text("Count Down for the eyes down"),
           ],
         ),
       ),
       body: Column(
         children: <Widget>[
-          SizedBox(height: 5),
+          SizedBox(height: 15),
           Expanded(
             flex: 2,
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Text(
                 'IF YOU COULD FIND OUT EXACTLY WHEN YOU\'RE GOING TO DIE... WOULD YOU WANT TO KNOW?',
-                style: TextStyle(color: Colors.grey, fontSize: 16),
+                style: TextStyle(color: Colors.blue, fontSize: 15),
               ),
             ),
           ),
@@ -102,13 +100,13 @@ class _PlayGameState extends State<PlayGame> {
             ),
           ),
           Expanded(
-            flex: 5,
+            flex: 4,
             child: Container(
               width: double.infinity,
               height: MediaQuery.of(context).size.height / 3,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage('images/intro.jpg'), fit: BoxFit.fill),
+                    image: AssetImage('images/intro in the action.jpg'), fit: BoxFit.fill),
               ),
             ),
           ),

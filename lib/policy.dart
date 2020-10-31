@@ -12,7 +12,7 @@ class Policy extends StatelessWidget {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.fromLTRB(50, 100, 50, 100),
-              child: Image.asset("images/logo.png"),
+              child: Image.asset("images/logo for the app.png"),
             ),
             RaisedButton(
               onPressed: () {
@@ -30,18 +30,18 @@ class Policy extends StatelessWidget {
                     fontSize: 18),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20),
-              child: Text(
-                "Disclaimer: This app is for entertainment purposes only results should not be taken seriously",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.grey,
-                  fontWeight: FontWeight.bold,
-                ),
+            Container(
+              width: 50,
+              height: 20,
+              color: Colors.white,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                Text(
+                'Would you like to join and play a game ?',
+                style: TextStyle(fontSize: 14),
               ),
-            )
+            ),
           ],
         ),
       ),

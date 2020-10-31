@@ -60,7 +60,7 @@ class _HomeState extends State<Home> with WidgetsBindingObserver {
     super.initState();
     print('Started');
     FirebaseAdMob.instance
-        .initialize(appId: "ca-app-pub-2946850357131537~8739245665");
+        .initialize(appId: "ca-app-pub-87954875124685");
 
     myBanner
       ..load()
@@ -138,7 +138,7 @@ class _HomeState extends State<Home> with WidgetsBindingObserver {
                             },
                             color: Colors.white,
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(30),
+                              borderRadius: BorderRadius.circular(40),
                             ),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -147,12 +147,12 @@ class _HomeState extends State<Home> with WidgetsBindingObserver {
                                   height: 20,
                                   width: 20,
                                   child: Image.asset(
-                                    'images/logo.png',
+                                    'images/logo for the app.png',
                                   ),
                                 ),
                                 Text(
                                   "Play",
-                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                  style: TextStyle(fontWeight: FontWeight.w100),
                                 ),
                               ],
                             ),
@@ -162,7 +162,7 @@ class _HomeState extends State<Home> with WidgetsBindingObserver {
                     ],
                   ),
                   Padding(
-                    padding: EdgeInsets.only(top: 20),
+                    padding: EdgeInsets.only(top: 10),
                     child: CountDownText(
                       time: (remaining.inDays ~/ 365).toString(),
                       color: Colors.red,
@@ -194,7 +194,7 @@ class _HomeState extends State<Home> with WidgetsBindingObserver {
                     child: Text(
                       'Refresh',
                       style: TextStyle(
-                          fontWeight: FontWeight.bold, color: Colors.white),
+                          fontWeight: FontWeight.normal, color: Colors.amber),
                     ),
                     onPressed: () {
                       int newdays = x.getInt('new');
@@ -224,16 +224,16 @@ class _HomeState extends State<Home> with WidgetsBindingObserver {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Container(
-                height: 35,
-                width: 35,
+                height: 45,
+                width: 45,
                 child: Image(
-                  image: AssetImage('images/logo.png'),
+                  image: AssetImage('images/logo for the app.png'),
                 ),
               ),
               SizedBox(
                 width: 10,
               ),
-              Text("Count Down Death"),
+              Text("Counting the part eyes"),
             ],
           ),
         ),
